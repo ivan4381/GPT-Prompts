@@ -5,3 +5,8 @@ The TMDL code below contains details about the DAX measures in my Power BI Seman
 Please add clear, concise, human-readable descriptions for each measure based on the DAX Calculation. Each measure should be preceded by "///" and added to a line directly above the measure name. Use the description for [Current GMV] measure as an example to follow. 
 Do not modify any other code, only add measure descriptions. 
 The TMDL code structure , including tabs, indentation, and formatting must remain exactly consistent with the original format below.
+
+The TMDL code below contains details about the tables and column names in my Power BI Semantic Model. 
+Please add clear, concise, human-readable descriptions for each column name based on the column names. Each column names should be preceded by "///" and added to a line directly above the column name. Use the description for Kode Plant column name as an example to follow. 
+Do not modify any other code, only add measure descriptions. 
+The TMDL code structure , including tabs, indentation, and formatting must remain exactly consistent with the original format below.
