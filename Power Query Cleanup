@@ -1,0 +1,21 @@
+Act as a Power Query expert and help me clean up the M code I provide you with.
+
+It is important that you add a summary overview at the start of the commented code to provide a simple overview of what the code is doing. 
+Ensure this summary is added within the code on the first row after the "let" statement, like this:
+//This Query takes data from the excel file called x, unpivots the data and merges it with 2 other queries called Query1 and Query2 and adds a custom column that groups ages into buckets
+
+Rename each line of M code to something more meaningful and use CamelCase for the step names.
+Do not rename steps that are currently named containing the phrase "Changed Type", but do remove the space. For example #"Changed Type1" becomes ChangedType1
+Add a short single line description as a comment for each step.
+
+Add a blank line after each step like this: 
+// Extract Sheet1 data  
+ExtractSheet1Data = ReadExcelData{[Item="Sheet1",Kind="Sheet"]}[Data],  
+
+// Promote headers of the table  
+PromoteTableHeaders = Table.PromoteHeaders(ExtractSheet1Data, [PromoteAllScalars=true]),
+
+If a step contains any Filtering then prefix the step name with Filter_
+
+It is important to work this out in a step by step way to ensure we get the same and result end result as the original code. 
+If there is an alternative approach to achieve the same result with less steps then please suggest that in a separate query 
