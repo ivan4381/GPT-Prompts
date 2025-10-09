@@ -17,5 +17,5 @@ PromoteTableHeaders = Table.PromoteHeaders(ExtractSheet1Data, [PromoteAllScalars
 
 If a step contains any Filtering then prefix the step name with Filter_
 
-It is important to work this out in a step by step way to ensure we get the same and result end result as the original code. 
+It is important to work this out in a step by step way to ensure we get the same end result as the original code. 
 If there is an alternative approach to achieve the same result with less steps then please suggest that in a separate query 
