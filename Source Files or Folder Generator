@@ -6,9 +6,13 @@ Source = Excel.Workbook(File.Contents(#"Source Data Path" & "\MyPB 2.0\Data Supp
 maka nama source path nya adalah isi dari query bernama Source Data Path yang digabungkan dengan \MyPB 2.0\Data Support, nama filenya adalah List SP di Exclude perhitungan Utilisasi MyPB.xlsx, dan tipenya adalah Excel 
 bisa juga untuk kasus lainnya untuk source path tidak ada referensi ke query lain, jadi tidak perlu menggabungkan tapi bisa langsung diekstrak.
 
+Identifikasi juga nama Query nya dari sript TMDL di bagian expression contohnya :
+expression 'Base Query' 
+maka nama Query nya adalah Base Query
+
 Buat hasilnya dalam bentuk tabel dengan bentuk di bawah ini, dan pastikan tidak ada duplikasi (unique) : 
 
-No.     Source Path      Nama File      Tipe 
+No.     Nama Query     Source Path      Nama File      Tipe 
 
 Jika source datanya berupa folder (bukan file individual, tapi ada beberapa file di dalamnya) maka di bagian Nama File cukup diisi "Multiple Files", dan untuk kolom Tipe diisi Folder
 
