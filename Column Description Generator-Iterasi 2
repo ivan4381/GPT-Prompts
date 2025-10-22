@@ -1,0 +1,23 @@
+Analisis script TMDL Power BI berikut.
+Ekstrak seluruh tabel & kolom beserta tipe data, lalu tambahkan kolom "Deskripsi Singkat" yang kontekstual sesuai semantic model di TMDL.
+
+Hasilkan satu tabel teks (tanpa duplikasi) dengan kolom:
+| No | Nama Tabel / View | Nama Kolom | Tipe Data | Deskripsi Singkat |
+
+Aturan deskripsi (prioritas):
+1) Jika ada "annotation Description", "description:" atau komentar pada kolom → gunakan apa adanya.
+2) Jika tidak ada, gunakan petunjuk "sourceColumn", "displayName", "displayFolder", atau komentar terdekat.
+3) Jika masih tidak ada, infer dari:
+   - Tipe tabel (Dim/Fact/Calendar/Lookup) & relasi (foreign key) bila tampak jelas.
+   - Pola nama kolom:
+     * *_id, *key → "Kunci unik …" / "Kunci referensi ke …"
+     * date, tanggal, datetime → "Tanggal …" / "Tanggal & waktu …"
+     * qty, quantity → "Kuantitas …"
+     * amount, nilai, price → "Nilai …"
+     * name, nama → "Nama …"
+     * status, flag → "Status/penanda …"
+     * code, kode → "Kode …"
+   - Maksimal 6–12 kata, jelas & ringkas, tetap sesuai konteks TMDL.
+4) Jika `dataType` tidak disebut, isi “(unknown)”.
+
+Berikut script TMDL-nya:
