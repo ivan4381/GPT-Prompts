@@ -1,0 +1,13 @@
+Create resume in the form of a table from the following Power BI TMDL relationship script, for example:
+
+createOrReplace
+
+	relationship 46c0d912-a6c7-cda9-e47f-241b4007af72
+		fromColumn: CEI.Area
+		toColumn: DimRegion.MOR
+
+Create this table :
+No.       [From Table.Column] → [To Table.Column]          Relationship Type
+1           [CEI.Area] → [DimRegion.MOR]                   Many to One
+
+Here is the Script :
