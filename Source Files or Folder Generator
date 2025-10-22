@@ -2,13 +2,13 @@ Saya punya script TMDL Power BI yang berisi M-Query di dalamnya, dan di dalam M-
 
 Ekstrak keterangan file Excel atau CSV yang ada di dalam M-Query tersebut yang meliputi Source Path, Nama File, dan Tipe File. 
 Contoh pola nya seperti ini : 
-Source = Excel.Workbook(File.Contents(#"Source Data Path" & "\MyPB 2.0\Data Support\List SP di Exclude perhitungan Utilisasi MyPB.xlsx"), null, true) 
-maka nama source path nya adalah isi dari query bernama Source Data Path yang digabungkan dengan \MyPB 2.0\Data Support, nama filenya adalah List SP di Exclude perhitungan Utilisasi MyPB.xlsx, dan tipenya adalah Excel 
+Source = Excel.Workbook(File.Contents(#"Source Data Path" & "\ABC\DEF\Source File Excel.xlsx"), null, true) 
+maka nama source path nya adalah isi dari query bernama Source Data Path yang digabungkan dengan \ABC\DEF, nama filenya adalah Source File Excel.xlsx, dan tipenya adalah Excel 
 bisa juga untuk kasus lainnya untuk source path tidak ada referensi ke query lain, jadi tidak perlu menggabungkan tapi bisa langsung diekstrak.
 
-Identifikasi juga nama Query nya dari sript TMDL di bagian expression contohnya :
-expression 'Base Query' 
-maka nama Query nya adalah Base Query
+Identifikasi juga nama Query nya dari script TMDL seperti contoh berikut :
+expression 'Base Query' --> maka nama Query nya adalah Base Query
+partition DimAssetClass = m --> maka nama Query adalah DimAssetClass
 
 Buat hasilnya dalam bentuk tabel dengan bentuk di bawah ini, dan pastikan tidak ada duplikasi (unique) : 
 
