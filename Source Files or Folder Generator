@@ -14,6 +14,7 @@ Buat hasilnya dalam bentuk tabel dengan bentuk di bawah ini, dan pastikan tidak 
 
 No.     Nama Query     Source Path      Nama File      Tipe 
 
-Jika source datanya berupa folder (bukan file individual, tapi ada beberapa file di dalamnya) maka di bagian Nama File cukup diisi "Multiple Files", dan untuk kolom Tipe diisi Folder
+Jika source datanya berupa folder (bukan file individual, tapi ada beberapa file di dalamnya) maka identifikasi jenis filenya di bagian Nama File cukup diisi "Multiple CSV Files" misalnya, sesuaikan dengan jenisnya. 
+dan untuk kolom Tipe diisi Folder
 
 Berikut Script nya :
