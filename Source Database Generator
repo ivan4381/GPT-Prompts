@@ -1,0 +1,15 @@
+Saya punya script TMDL Power BI yang berisi M-Query di dalamnya, dan di dalam M-Query tersebut terdapat SQL Query sebagai sumber datanya. 
+
+Ekstrak source database yang ada di dalam M-Query tersebut, yang meliputi : 
+- Nama Database, Schema, dan tabel (untuk SQL Server) 
+Contoh pola nya seperti ini : FROM [cntdimensional].[sap].[credit_limit_customer_cnt] 
+maka nama databasenya adalah cntdimensional, Schema nya adalah sap, dan tabelnya credit_limit_customer_cnt 
+- Nama Dataset, dan schema (untuk BigQuery) 
+Contoh polanya seperti ini : FROM data-governance-ppn.data_analytics_gold.MYPB_vw_sales_order_sapbi 
+maka nama Datasetnya adalah data-governance, Schemanya adalah data_analytics_gold dan tabelnya adalah MYPB_vw_sales_order_sapbi 
+
+Buat hasilnya dalam bentuk tabel dengan bentuk di bawah ini, dan pastikan tidak ada duplikasi (unique) : 
+
+No.     Dataset/Database      Dataset/Schema      Nama Tabel/View 
+
+Berikut Script nya :
