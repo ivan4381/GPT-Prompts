@@ -1,0 +1,81 @@
+Buat 1 infografis edukatif profesional dalam Bahasa Indonesia
+tentang penggunaan Power Query di Microsoft Excel untuk PEMULA.
+
+FORMAT GAMBAR
+- Rasio 16:9
+- Resolusi 1920 × 1080 px
+- Orientasi horizontal (kiri ke kanan)
+- Satu gambar saja (1 PNG)
+
+GAYA VISUAL
+- Infografis modern, bersih, profesional
+- Warna kontras tinggi dan ramah mata
+- Teks besar, singkat, mudah dibaca
+- Ilustrasi flat / semi-flat (bukan foto)
+- Gaya ikon konsisten di semua langkah
+
+KONTEN UMUM
+- Target audiens: pengguna Excel non teknis
+- Tidak menampilkan:
+  - Kode
+  - Formula
+  - Istilah teknis kompleks
+- Fokus pada alur visual dan pemahaman logika sederhana
+
+STRUKTUR LAYOUT
+- Judul besar di bagian atas
+- 7 langkah berurutan dari kiri ke kanan
+- Setiap langkah dalam satu panel visual
+- Setiap langkah WAJIB memiliki:
+  - Nomor langkah besar
+  - Judul singkat
+  - Deskripsi sangat ringkas (1 kalimat)
+  - Ikon relevan dan jelas
+
+JUDUL UTAMA
+“Memfilter Data Menggunakan Tabel Pengecualian di Power Query”
+
+ISI LANGKAH (WAJIB SESUAI URUTAN)
+
+Langkah 1
+Judul: Siapkan Dua Tabel
+Deskripsi: Tersedia tabel data utama dan tabel daftar yang ingin dikeluarkan.
+Ikon: Dua tabel berdampingan.
+
+Langkah 2
+Judul: Samakan Kolom Customer
+Deskripsi: Pastikan kedua tabel memakai kolom Customer yang sama.
+Ikon: Kolom “Customer” di dua tabel disorot.
+
+Langkah 3
+Judul: Mulai Merge
+Deskripsi: Pilih tabel utama lalu klik menu Merge Queries.
+Ikon: Tombol Merge Queries di Power Query.
+
+Langkah 4
+Judul: Pilih Customer
+Deskripsi: Pilih kolom Customer di kedua tabel.
+Ikon: Dua kolom dihubungkan garis.
+
+Langkah 5
+Judul: Pilih Left Anti
+Deskripsi: Atur agar data tertentu dikeluarkan dari hasil.
+Ikon: Dropdown Join Type dengan Left Anti ditandai.
+
+Langkah 6
+Judul: Bersihkan Kolom
+Deskripsi: Hapus kolom tambahan yang tidak dibutuhkan.
+Ikon: Ikon hapus kolom.
+
+Langkah 7
+Judul: Hasil Akhir
+Deskripsi: Data tersisa adalah data yang tidak termasuk daftar pengecualian.
+Ikon: Tabel akhir dengan tanda centang.
+
+CATATAN VISUAL TAMBAHAN
+- Tampilkan perbedaan jelas antara Original dan Filtered
+- Gunakan panah atau highlight untuk menunjukkan proses pengecualian
+- Fokus visual pada konsep “data dikeluarkan”
+
+FOOTER / PESAN PENEKANAN
+“Hasil akhir: data lebih bersih dan siap digunakan”
