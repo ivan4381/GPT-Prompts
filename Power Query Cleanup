@@ -1,21 +1,49 @@
-Act as a Power Query expert and help me clean up the M code I provide you with.
+Goal:
+Act as a Power Query (M language) expert and refactor the provided M code to improve readability, maintainability, and documentation—without changing the logic or output.
 
-It is important that you add a summary overview at the start of the commented code to provide a simple overview of what the code is doing. 
-Ensure this summary is added within the code on the first row after the "let" statement, like this:
-//This Query takes data from the excel file called x, unpivots the data and merges it with 2 other queries called Query1 and Query2 and adds a custom column that groups ages into buckets
+Context:
+The code may contain unclear step names, inconsistent formatting, and minimal comments. The goal is to standardize naming, improve documentation, and make the transformation steps easier to understand for future maintenance and data governance.
 
-Rename each line of M code to something more meaningful and use CamelCase for the step names.
-Do not rename steps that are currently named containing the phrase "Changed Type", but do remove the space. For example #"Changed Type1" becomes ChangedType1
-Add a short single line description as a comment for each step.
+Instructions:
+1. Add a summary comment immediately after the `let` statement that clearly explains what the query does at a high level.
+   - IMPORTANT: The summary must be written in Bahasa Indonesia
+   - Format:
+   let
+       // Query ini <penjelasan singkat dan jelas tentang tujuan query>
 
-Add a blank line after each step like this: 
-// Extract Sheet1 data  
-ExtractSheet1Data = ReadExcelData{[Item="Sheet1",Kind="Sheet"]}[Data],  
+2. Rename all steps to meaningful names using CamelCase:
+   - Use VerbNoun format for transformation steps (e.g., SelectColumns, FilterValidRows, ReorderColumns)
+   - Use Noun format for source/reference tables (e.g., Source, MappingTable)
+   - Preserve any step containing "Changed Type", but remove spaces (e.g., #"Changed Type1" → ChangedType1)
 
-// Promote headers of the table  
-PromoteTableHeaders = Table.PromoteHeaders(ExtractSheet1Data, [PromoteAllScalars=true]),
+3. If a step includes filtering logic, prefix the step name with `Filter_`
+   - Only apply this to top-level steps (not nested expressions)
 
-If a step contains any Filtering then prefix the step name with Filter_
+4. Add a single-line comment above each step explaining what the step does
+   - IMPORTANT: All comments must be written in Bahasa Indonesia
+   - Keep comments concise, clear, and business-friendly (tidak terlalu teknis jika tidak perlu)
 
-It is important to work this out in a step by step way to ensure we get the same end result as the original code. 
-If there is an alternative approach to achieve the same result with less steps then please suggest that in a separate query 
+5. Add a blank line after each step for readability
+
+6. Ensure the final output:
+   - Preserves the original logic and results exactly
+   - Maintains correct step dependencies
+   - Is syntactically valid M code
+
+7. Work through the transformation carefully and sequentially to avoid breaking the query logic
+
+8. Data Quality Awareness:
+   - Add inline comments (in Bahasa Indonesia) highlighting any potential risks such as:
+     - Silent errors (e.g., try...otherwise)
+     - Ignored missing fields
+     - Duplicate or inconsistent mappings
+     - Any transformation that could impact data integrity
+
+9. If a more efficient or simplified approach exists:
+   - Provide it as a separate alternative query
+   - Briefly explain (in Bahasa Indonesia) why it is more efficient (e.g., fewer steps, better performance, improved readability)
+
+Output Format:
+1. Refactored M code (with Bahasa Indonesia comments)
+2. Alternative optimized version (if applicable)
+3. Brief explanation of improvements made (in Bahasa Indonesia)
