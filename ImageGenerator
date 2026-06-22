@@ -1,0 +1,13 @@
+1. Upload gambar referensi (bisa dari Pinterest)
+2. Input Prompt ini :
+Buatkan outline per slide untuk presentasi [masukkan jumlah slide, misal: 10] slide tentang '[masukkan judul/topik presentasimu di sini]'. Outline ini harus menspesifikasikan gaya desain, struktur, layout, ilustrasi, dan teks isi pembahasan secara keseluruhan Per Slide. Untuk gaya desain, harus menyerupai seperti referensi desain pada gambar yang telah saya cantumkan. Untuk konten, harus komprehensif, baik itu ilustrasi, maupun teks. [masukkan jumlah slide] slide sudah termasuk cover, yang harus ada data diri sebagai berikut: [tuliskan nama lengkap kamu, jabatan, atau nama anggota kelompokmu] > Slide terakhir adalah terima kasih. JANGAN buatkan draf presentasi, deck slide, atau file PPT apa pun. Anda bisa mulai berikan saya outline nya.
+3. Respon Gemini kurang lebih begini :
+[Tema Visual Keseluruhan] > (Di sini Gemini akan menjelaskan deskripsi visual dari gambar Pinterest yang kamu unggah, seperti warna dominan, gaya desain, dan mood). 
+[Outline Slide 1] > (Berisi Judul Slide, Teks Konten Utama, Deskripsi Visual/Ilustrasi yang dibutuhkan, Elemen Pendukung, dan Komposisi Layout untuk Slide 1). 
+[Outline Slide 2] (Berisi elemen yang sama persis seperti di atas untuk Slide 2).
+....dan seterusnya
+4. Input prompt ini :
+Sekarang, tolong buatkan saya ilustrasi untuk slide pertama, sesuai spesifikasi tadi, aspek rasio 16:9. JANGAN buatkan draft presentasi, deck slide, atau file PPT apa pun. 
+Tema Visual Keseluruhan: 
+[paste [Tema Visual Keseluruhan] yang gemini tadi kasih] 
+[paste [Outline slide] slide pertama yang gemini tadi kasih]
